@@ -1,0 +1,24 @@
+.logo {
+    font-family: var(--logo-fonts);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-colors-font);
+    display: flex;
+
+    &--blue {
+        color: var(--accent-color-font);
+    }
+
+    &--white {
+        color: var(--simply-white);
+    }
+
+    &-header__mode {
+        margin-right: 93px;
+    }
+
+    &-footer__mode {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+.header {
+    border-bottom: 1px solid var(--footer-work-border);
+    
+    &__flex {
+    display: flex;
+    align-items: center;
+    }
+
+    &-contact {
+        display: flex;
+        margin-left: auto;
+
+        &__container {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--secondary-colors-font);
+            transition: color 250ms var(--main-cube);
+
+            &:hover,
+            &:focus {
+                color: var(--accent-color-font);
+            }
+        }
+        
+        &__text {
+            display: flex;
+            fill: var(--secondary-colors-font);
+            transition: fill 250ms var(--main-cube);
+
+            &:hover,
+            &:focus {
+                fill: currentColor;
+            }
+        }
+
+        &__right {
+            margin-right: 30px;
+        }
+        
+        &__icon {
+            min-height: 16px;
+            margin-right: 10px;
+        }
+    }    
+}

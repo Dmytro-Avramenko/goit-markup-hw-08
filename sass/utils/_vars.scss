@@ -1,0 +1,40 @@
+// перший паршал
+:root {
+    /* fonts */
+    --main-fonts: "Roboto";
+    --logo-fonts: "Raleway";
+    /* text colors */
+    --main-colors-font: #212121;
+    --secondary-colors-font: #757575;
+    --accent-color-font: #2196F3;
+    --hero-color: #FFFFFF;
+    --simply-white: #FFFFFF;
+    --adrees-colors: rgba(255, 255, 255, 0.6);
+    /* bg-colors */
+    --main-bg: #fff;
+    --secondary-bg: #F5F4FA;
+    --hero-bg: #2F303A;
+    --footer-bg: #2F303A;
+    /* others */
+    --btn-hero: #2196F3;
+    --btn-hover: #188CE8;
+    --footer-work-border: #ECECEC;
+    --ounline-portfolio-work: #EEEEEE;
+    --social-icons: #AFB1B8;
+    --main-cube: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    width: 696px;
+    margin: auto;
+}
