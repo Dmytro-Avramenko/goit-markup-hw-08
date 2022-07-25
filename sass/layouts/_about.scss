@@ -1,7 +1,7 @@
-.about__list {
+.about {
     display: flex;
 
-    .about__item {
+    &__item {
         margin-right: 30px;
     
         &:last-child {
@@ -9,7 +9,7 @@
         }
     }
     
-    .about__card {
+    &__card {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,7 +20,7 @@
         margin-bottom: 30px;
     }
     
-    .about__title {
+    &__title {
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 14px;
@@ -29,13 +29,9 @@
         text-transform: uppercase;
     }
     
-    .about__details {
+    &__details {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--secondary-colors-font);
     }
-
-
-    
 }
- 
