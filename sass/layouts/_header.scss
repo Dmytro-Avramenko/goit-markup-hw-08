@@ -1,8 +1,4 @@
 .header {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-    
     border-bottom: 1px solid var(--footer-work-border);
     
     &__flex {
@@ -11,6 +7,10 @@
     }
 
     &-contact {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
         display: flex;
         margin-left: auto;
 
@@ -46,25 +46,4 @@
             margin-right: 10px;
         }
     }    
-}
-
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.menu-button .icon-cross {
-    display: none;
-}
-
-.menu-button.is-open .icon-cross{
-    display: block;
-}
-
-.menu-button.is-open .icon-menu {
-    display: none;
 }

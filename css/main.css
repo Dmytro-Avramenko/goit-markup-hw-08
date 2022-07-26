@@ -329,6 +329,8 @@ p {
 }
 
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: var(--logo-fonts);
   font-size: 24px;
   line-height: 1.19;
@@ -350,8 +352,10 @@ p {
 .logo--white {
   color: var(--simply-white);
 }
-.logo-header__mode {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .logo-header__mode {
+    margin-right: 93px;
+  }
 }
 .logo-footer__mode {
   margin-bottom: 20px;
@@ -636,28 +640,51 @@ p {
   color: var(--accent-color-font);
 }
 
-.menu-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-  fill: var(--main-colors-font);
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.menu-button--close {
+
+.mobile-menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  background-color: transparent;
   fill: var(--main-colors-font);
+  margin-left: auto;
 }
-.menu-button:hover .modal__btn--close, .menu-button:focus .modal__btn--close {
-  fill: var(--accent-color-font);
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-btn .icon-close {
+  display: none;
+}
+
+.mobile-menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.mobile-menu-btn.is-open .icon-burger {
+  display: none;
 }
 
 .header {
   border-bottom: 1px solid var(--footer-work-border);
-}
-@media screen and (max-width: 767px) {
-  .header {
-    display: none;
-  }
 }
 .header__flex {
   display: -webkit-box;
@@ -672,6 +699,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .header-contact {
+    display: none;
+  }
 }
 .header-contact__container {
   font-weight: 500;
@@ -700,29 +732,6 @@ p {
 .header-contact__icon {
   min-height: 16px;
   margin-right: 10px;
-}
-
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .hero {

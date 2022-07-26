@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu-btn {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;    
+    border: 0;
+    background-color: transparent;
+    fill: var(--main-colors-font);
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }    
+}
+
+.mobile-menu-btn .icon-close {
+    display: none;
+}
+
+.mobile-menu-btn.is-open .icon-close {
+    display: block;
+}
+
+.mobile-menu-btn.is-open .icon-burger {
+    display: none;
+}
