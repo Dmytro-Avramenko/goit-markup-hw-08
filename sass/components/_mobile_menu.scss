@@ -1,0 +1,17 @@
+.menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    fill: var(--main-colors-font);
+
+    &--close {
+        fill: var(--main-colors-font);
+    }
+    
+    &:hover .modal__btn--close,
+    &:focus .modal__btn--close {
+        fill: var(--accent-color-font);
+    }
+}
