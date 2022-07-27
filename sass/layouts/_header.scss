@@ -6,8 +6,7 @@
     align-items: center;
     }
 
-    &-contact {
-        // display: flex;
+    &-contact {         
         margin-left: auto;
 
         @media screen and (max-width: 767px) {
@@ -15,11 +14,15 @@
         }
 
         @media screen and (min-width: 768px) {
-            // flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         @media screen and (min-width: 1200px) {
-            display: flex;         
+            display: flex;
+            flex-direction: row;
+            gap: 0;
         }       
 
         &__container {
@@ -45,13 +48,11 @@
             }
 
             @media screen and (min-width: 768px) {
-                font-size: 12px;
-                margin-bottom: 10px;             
+                font-size: 12px;                            
             }
 
             @media screen and (min-width: 1200px) {
-                font-size: 14px;
-                margin-bottom: 0px;
+                font-size: 14px;                
             }  
         }
 
@@ -66,11 +67,12 @@
             max-width: 14px;
             max-height: 14px;
             // min-height: 16px;
-            margin-right: 10px;
+            margin-right: 8px;
 
             @media screen and (min-width: 1200px) {
                 max-width: 16px;
                 max-height: 16px;
+                margin-right: 10px;
             }
         }
     }    
