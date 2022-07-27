@@ -37,8 +37,7 @@
         &__text {
             display: flex;
             fill: var(--secondary-colors-font);
-            transition: fill 250ms var(--main-cube);
-            align-items: flex-end;
+            transition: fill 250ms var(--main-cube);            
 
             &:hover,
             &:focus {
@@ -46,11 +45,13 @@
             }
 
             @media screen and (min-width: 768px) {
-                font-size: 12px;             
+                font-size: 12px;
+                margin-bottom: 10px;             
             }
 
             @media screen and (min-width: 1200px) {
                 font-size: 14px;
+                margin-bottom: 0px;
             }  
         }
 
@@ -62,8 +63,15 @@
         }
         
         &__icon {
-            min-height: 16px;
+            max-width: 14px;
+            max-height: 14px;
+            // min-height: 16px;
             margin-right: 10px;
+
+            @media screen and (min-width: 1200px) {
+                max-width: 16px;
+                max-height: 16px;
+            }
         }
     }    
 }

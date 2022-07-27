@@ -857,9 +857,6 @@ p {
   fill: var(--secondary-colors-font);
   -webkit-transition: fill 250ms var(--main-cube);
   transition: fill 250ms var(--main-cube);
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 .header-contact__text:hover, .header-contact__text:focus {
   fill: currentColor;
@@ -867,11 +864,13 @@ p {
 @media screen and (min-width: 768px) {
   .header-contact__text {
     font-size: 12px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-contact__text {
     font-size: 14px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -880,8 +879,15 @@ p {
   }
 }
 .header-contact__icon {
-  min-height: 16px;
+  max-width: 14px;
+  max-height: 14px;
   margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
 }
 
 .hero {
@@ -1138,16 +1144,40 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.portfolio-work:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-work {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-work__position {
+  margin-bottom: 15px;
   margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-work__position {
+    margin-bottom: 0;
+  }
+}
+.portfolio-work__position:last-child {
+  margin-right: 0;
+}
+.portfolio-work :nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 .portfolio-work__btn {
   display: inline-block;
