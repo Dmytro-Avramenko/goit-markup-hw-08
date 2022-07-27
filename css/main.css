@@ -384,12 +384,20 @@ p {
   }
 }
 .logo-footer__mode {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .logo-footer__mode {
     margin-bottom: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -818,9 +826,6 @@ p {
           align-items: center;
 }
 .header-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 @media screen and (max-width: 767px) {
@@ -828,10 +833,11 @@ p {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-contact {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .header-contact__container {
@@ -851,9 +857,22 @@ p {
   fill: var(--secondary-colors-font);
   -webkit-transition: fill 250ms var(--main-cube);
   transition: fill 250ms var(--main-cube);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .header-contact__text:hover, .header-contact__text:focus {
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .header-contact__text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__text {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-contact__right {
@@ -866,7 +885,7 @@ p {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 767px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -881,7 +900,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1119px;
   }
 }
 @media screen and (min-width: 1200px) {

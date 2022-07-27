@@ -33,11 +33,13 @@
     }
 
     &-footer__mode {
-        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
 
         @media screen and (min-width: 1200px) {
             margin-bottom: 20px;
+            justify-content: flex-start;
         }        
     }
 }

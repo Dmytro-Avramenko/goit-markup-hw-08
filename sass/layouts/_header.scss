@@ -7,7 +7,7 @@
     }
 
     &-contact {
-        display: flex;
+        // display: flex;
         margin-left: auto;
 
         @media screen and (max-width: 767px) {
@@ -15,11 +15,11 @@
         }
 
         @media screen and (min-width: 768px) {
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
         }
 
         @media screen and (min-width: 1200px) {
-         
+            display: flex;         
         }       
 
         &__container {
@@ -38,6 +38,7 @@
             display: flex;
             fill: var(--secondary-colors-font);
             transition: fill 250ms var(--main-cube);
+            align-items: flex-end;
 
             &:hover,
             &:focus {
@@ -45,8 +46,12 @@
             }
 
             @media screen and (min-width: 768px) {
-             
+                font-size: 12px;             
             }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+            }  
         }
 
         &__right {
