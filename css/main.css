@@ -140,7 +140,7 @@ p {
 
 .img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1066,6 +1066,17 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: calc((100% - 120px) / 4);
+  }
+}
 .team-card__title {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1210,18 +1221,22 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.portfolio :nth-child(3n) {
-  margin-right: 0;
-}
-.portfolio :nth-last-child(-n+3) {
-  margin-bottom: 0;
+  margin: -15px;
 }
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
   background-color: var(--simply-white);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 .portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
