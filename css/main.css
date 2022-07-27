@@ -1222,15 +1222,25 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .portfolio__item {
   margin: 15px;
+  width: 100%;
   background-color: var(--simply-white);
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc((100% - 60px) / 2);
-    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
