@@ -97,6 +97,10 @@
     line-height: 1.64;
     letter-spacing: 0.02em;
     color: #757575;
+
+    @media screen and (max-width: 380px) {
+        font-size: 20px;
+    }
 }
 
 .mobile-menu-contacts-item {
@@ -107,6 +111,10 @@
     .accent {
 		font-size: 34px;
 		color: #2196f3;
+
+        @media screen and (max-width: 380px) {
+            font-size: 26px;
+        }
 	}
 }
 

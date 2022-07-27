@@ -36,7 +36,12 @@ html {
 
 h1 {
     width: 360px;
-    margin: auto;    
+    margin: auto;
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+       
 
     @media screen and (min-width: 1200px) {
         width: 696px;
