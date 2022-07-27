@@ -10,8 +10,46 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero/img-hero.jpg);
-    background-color: var(--hero-bg);
+        url(../images/hero/img-hero-480.jpg);
+
+        @media (min-resolution: 2dppx) {            
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),            
+            url(../images/hero/img-hero-480-2x.jpg);
+        }
+
+        @media (min-width: 768px) {            
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),            
+            url(../images/hero/img-hero-768.jpg);
+
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/img-hero-768-2x.jpg);
+            }
+        }
+
+        @media (min-width: 1200px) {            
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),            
+            url(../images/hero/img-hero-1200.jpg);
+
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/img-hero-1200-2х.jpg);
+            }
+        }   
+        
+    
+    
+        background-color: var(--hero-bg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
