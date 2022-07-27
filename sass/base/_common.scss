@@ -4,5 +4,12 @@
     line-height: 1.14;
     color: var(--main-colors-font);
     background-color: var(--main-bg);
+
+    &.no-scroll {
+        overflow: hidden;
+    }    
 }
 
+// * {
+//     outline: 1px solid red;
+// }

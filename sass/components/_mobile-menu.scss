@@ -14,15 +14,21 @@
     margin-left: auto;
     z-index: 1000;
     cursor: pointer;
+    transition: fill 250ms var(--main-cube);
 
-    &--close {
-        fill: var(--main-colors-font);
+    &:hover,
+    &:focus {
+        fill: var(--btn-hover);        
     }
+    
+    // &--close {
+    //     fill: var(--main-colors-font);
+    // }
 
-    &:hover .mobile-menu-btn--close,
-    &:focus .mobile-menu-btn--close {
-    fill: var(--accent-color-font);
-    }
+    // &:hover .mobile-menu-btn--close,
+    // &:focus .mobile-menu-btn--close {
+    // fill: var(--accent-color-font);
+    // }
 
     @media screen and (min-width: 768px) {
         display: none;   

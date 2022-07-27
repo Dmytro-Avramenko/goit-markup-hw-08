@@ -24,21 +24,29 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
 
-	<body class="body">
+	<body data-body class="body">
 		<!-- Section header -->
-		<!-- <header class="header">
-			<div class="container header__flex">
+		<header class="header">
+			<div class="menu container header__flex">
+				<a class="logo logo-header__mode link" lang="en" href="./index.html">
+					<span class="logo--blue">Web</span>
+					Studio
+				</a>
+
+				<button class="mobile-menu-btn" type="button" is-open data-menu-button>
+					<svg class="mobile-menu-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+						<use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+						<use class="icon-close mobile-menu-btn--close" href="./images/icons.svg#icon-burger-cross"></use>
+					</svg>
+				</button>
+
 				<nav class="nav">
-					<a class="logo logo-header__mode link" lang="en" href="./index.html">
-						<span class="logo--blue">Web</span>
-						Studio
-					</a>
 					<ul class="nav__list list">
 						<li class="nav__item">
-							<a class="nav__link link" href="./index.html">Студия</a>
+							<a class="nav__link link nav__link--current" href="./index.html">Студия</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link nav__link--current" href="./portfolio.html">Портфолио</a>
+							<a class="nav__link link" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link link" href="">Контакты</a>
@@ -70,7 +78,6 @@
 				</ul>
 			</div>
 		</header>
-		 -->
 
 		<!-- Section main -->
 		<main>
@@ -345,9 +352,9 @@
 		</main>
 
 		<!-- Section footer -->
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="footer__container container">
-				<div class="footer__address">
+				<div class="address">
 					<a class="logo logo--blue logo-footer__mode link" lang="en" href="./index.html">
 						Web
 						<span class="logo--white">Studio</span>
@@ -411,7 +418,7 @@
 					</ul>
 				</div>
 
-				<div class="footer__subscribe">
+				<div class="subscribe">
 					<strong class="footer__subtitle">Подпишитесь на рассылку</strong>
 
 					<form class="subscribe__form">
@@ -427,6 +434,6 @@
 					</form>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 	</body>
 </html>

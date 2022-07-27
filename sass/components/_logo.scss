@@ -1,17 +1,15 @@
 .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
     font-family: var(--logo-fonts);
     font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-colors-font);
     display: flex;
-
+    
     @media screen and (min-width: 1200px) {
         font-size: 26px;
         line-height: 1.19;
-    }
+    }    
 
     &--blue {
         color: var(--accent-color-font);
@@ -22,12 +20,24 @@
     }
 
     &-header__mode {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+
         @media screen and (min-width: 1200px) {
             margin-right: 93px;        
         }        
     }
 
     &-footer__mode {
+        display: block;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 20px;
+        }        
     }
 }
